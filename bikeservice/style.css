@@ -1,0 +1,467 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/*navigation*/
+header a {
+    text-decoration: none;
+}
+
+header {
+    padding: 0 10px;
+    background-color: #1d1f1d;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#brand {
+    font-weight: bold;
+    font-size: 25px;
+    display: flex;
+    border: 0px solid white;
+    align-items: center;
+}
+
+#brand a {
+    color: aqua;
+    font-size: 35px;
+}
+
+ul {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+ul a {
+    color: aqua;
+    font-weight: 700;
+}
+
+ul li {
+    padding: 5px;
+    margin-left: 50px;
+
+}
+
+ul li:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+    background-color: rgb(238, 97, 97);
+    border-radius: 10px;
+
+}
+
+
+#login,
+#signup {
+    border-radius: 5px;
+    padding: 5px 8px;
+}
+
+#login {
+    border: 1px solid aqua;
+}
+
+#signup {
+    border: 1px solid aqua;
+}
+
+#signup a {
+    color: aqua;
+}
+
+#login a {
+    color: aqua;
+}
+
+#hamburger-icon {
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
+}
+
+#hamburger-icon div {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+    opacity: 0;
+}
+
+.open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    justify-content: flex-start;
+    height: max-content;
+}
+
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    height: calc(100vh - 50px);
+    width: 100%;
+    backdrop-filter: blur(10px);
+    z-index: 1;
+}
+
+.mobile-menu li {
+    margin-bottom: 10px;
+}
+
+/*home*/
+.home {
+    width: 100%;
+    /* Ensure container takes full width */
+    /* Adjust as per your layout */
+    height: 640px;
+    /* Let height adjust based on aspect ratio */
+    overflow: hidden;
+    /* Ensure image doesn't overflow container */
+    position: relative;
+    /* Needed for absolute positioning of image */
+}
+
+.responsive {
+    width: 100%;
+    /* Take full width of container */
+    height: 100%;
+    /* Take full height of container */
+    object-fit: fill;
+}
+
+/*about*/
+.about h1 {
+    text-align: center;
+    padding-top: 50px;
+    color: aqua;
+}
+
+.abt-us {
+    max-width: 60%;
+    border: 0px solid red;
+    margin: 40px auto;
+    display: flex;
+}
+
+.abt-us .detail {
+    max-width: 50%;
+    border: 0px solid red;
+    margin-left: 50px;
+}
+
+.abt-us .detail h2 {
+    margin-bottom: 20px;
+    margin-top: 40px;
+    color: orange;
+}
+
+.about img {
+    max-width: 350px;
+    height: 350px;
+    box-shadow: 10px 10px 30px rgb(180, 177, 177);
+}
+
+/*services*/
+.service h1 {
+    text-align: center;
+    color: aqua;
+}
+
+.service .ser1 {
+    display: flex;
+    max-width: 80%;
+    margin: 50px auto;
+}
+
+.service .ser1 .ser1-detail {
+    margin-left: 50px;
+    margin-top: 100px;
+    max-width: 500px;
+    border: 0px solid red;
+}
+
+.service .ser1 img {
+    border-radius: 50%;
+    width: 340px;
+    height: 340px;
+}
+
+.service .ser1 .ser1-detail h2 {
+    margin-bottom: 30px;
+}
+
+/*service2*/
+
+.service .ser2 {
+    display: flex;
+    max-width: 80%;
+    margin: 50px auto;
+}
+
+.service .ser2 .ser2-detail {
+    margin-left: 50px;
+    margin-top: 100px;
+    max-width: 500px;
+    border: 0px solid red;
+}
+
+.service .ser2 img {
+    border-radius: 50%;
+    width: 340px;
+    height: 340px;
+}
+
+.service .ser2 .ser2-detail h2 {
+    margin-bottom: 30px;
+}
+
+/*service 3*/
+.service .ser3 {
+    display: flex;
+    max-width: 80%;
+    margin: 50px auto;
+}
+
+.service .ser3 .ser3-detail {
+    margin-left: 50px;
+    margin-top: 100px;
+    max-width: 500px;
+    border: 0px solid red;
+}
+
+.service .ser3 img {
+    border-radius: 50%;
+    width: 340px;
+    height: 340px;
+}
+
+.service .ser3 .ser3-detail h2 {
+    margin-bottom: 30px;
+}
+
+.service h2{
+    color:rgb(249, 112, 0);
+}
+
+/*contact*/
+
+.contact {
+    padding: 25px 0;
+    position: relative;
+    top: 0px;
+}
+
+.contact .heading h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    color: rgb(24, 223, 210);
+}
+
+.contact .heading h2 span {
+    color: #ff9100;
+}
+
+.contact .heading p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #999999;
+    margin: 20px 0 60px;
+    padding: 0;
+}
+
+.contact .form-control {
+    padding: 25px;
+    font-size: 13px;
+    margin-bottom: 10px;
+    background: #f9f9f9;
+    border: 0;
+    border-radius: 10px;
+}
+
+.contact button.btn {
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    background: rgb(24, 223, 210);
+    color: #000000;
+}
+
+.contact .title h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(24, 223, 210);
+}
+
+.contact .title p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #999;
+    line-height: 1.6;
+    margin: 0 0 40px;
+}
+
+.contact .content .info {
+    margin-top: 30px;
+}
+
+.contact .content .info i {
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+    color: #02434b;
+    margin-right: 20px;
+    text-align: center;
+    width: 20px;
+}
+
+.contact .content .info h4 {
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.contact .content .info h4 span {
+    font-size: 15px;
+    font-weight: 300;
+    color: #2C7865;
+}
+
+.contact .content .info .sm {
+    margin-left: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .AI {
+        width: 100%;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    #hamburger-icon {
+        display: block;
+    }
+
+    .home {
+        height: 500px;
+    }
+
+    /*about*/
+    .about img {
+        max-width: 350px;
+        height: 200px;
+    }
+
+    .abt-us {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .abt-us .detail {
+        max-width: 100%;
+        border: 0px solid red;
+        margin-left: 0px;
+    }
+
+    /*service*/
+
+    /*service1*/
+    .service .ser1 {
+        display: flex;
+        flex-direction: column;
+        max-width: 80%;
+        margin: 50px auto;
+    }
+
+    .service .ser1 img {
+        border-radius: 10%;
+        width: 300px;
+        height: 250px;
+    }
+
+    .service .ser1 .ser1-detail {
+        margin-left: 20px;
+        margin-top: 80px;
+        max-width: 800px;
+    }
+
+    /*service 2*/
+    .service .ser2 {
+        display: flex;
+        flex-direction: column;
+        max-width: 80%;
+        margin: 50px auto;
+    }
+
+    .service .ser2 img {
+        border-radius: 10%;
+        width: 250px;
+        height: 340px;
+    }
+
+    .service .ser2 .ser2-detail {
+        margin-left: 20px;
+        margin-top: 80px;
+        max-width: 800px;
+    }
+
+    .service .ser2 img {
+        border-radius: 10%;
+        width: 300px;
+        height: 250px;
+    }
+
+    /*service 3*/
+    .service .ser3 {
+        display: flex;
+        flex-direction: column;
+        max-width: 80%;
+        margin: 50px auto;
+    }
+
+    .service .ser3 img {
+        border-radius: 10%;
+    }
+
+    .service .ser3 .ser3-detail {
+        margin-left: 20px;
+        margin-top: 80px;
+        max-width: 800px;
+    }
+
+    .service .ser3 img {
+        border-radius: 10%;
+        width: 300px;
+        height: 250px;  
+    }
+
+}

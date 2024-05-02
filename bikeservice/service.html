@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike service center</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="c:\Users\WELCOME\Downloads\person-biking-solid.svg">
+    <script src="https://kit.fontawesome.com/7bb075a920.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div id="brand"><a href="/"><i class="fa-solid fa-person-biking"></i></a></div>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./service.html">Services</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li id="login"><a href="/login">Login</a></li>
+                <li id="signup"><a href="/signup">Signup</a></li>
+            </ul>
+        </nav>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./service.html">Services</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li id="login"><a href="/login">Login</a></li>
+                <li id="signup"><a href="/signup">Signup</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="home" id="home">
+        <img src="./bike.jpg" alt="img1" class="responsive">
+    </div>
+
+
+    <div class="service" id="services">
+        <h1>Services</h1>
+        <!--service1-->
+        <div class="ser1" id="ser1">
+            <img src="./bike1.png" alt="img2">
+            <div class="ser1-detail">
+                <h2>General service check-up</h2>
+                <p>
+                    At OilCare Services, we specialize in comprehensive oil and gas solutions. From exploration and
+                    drilling to transportation and refining, our expert team ensures safety, efficiency, and
+                    environmental responsibility. We leverage cutting-edge technology to optimize operations and
+                    reduce costs, while adhering to the highest industry standards. Trust OilCare for reliable,
+                    top-quality service that powers your success in the energy sector.
+                </p>
+            </div>
+        </div>
+        <!--service 2-->
+        <div class="ser2" id="ser2">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7dG8ynzJqLXml7nTNR1THsiXU3Awox9cFBw&s"
+                alt="img3">
+            <div class="ser2-detail">
+                <h2>Oil service</h2>
+                <p> A general service check-up is a comprehensive inspection of a vehicle's key components,
+                    including
+                    the
+                    engine, brakes, tires, and fluids, to ensure optimal performance and safety. It identifies
+                    potential
+                    issues early, preventing costly repairs and ensuring roadworthiness.
+                </p>
+            </div>
+        </div>
+        <!--service 3-->
+        <div class="ser3" id="ser3">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQghj2aIgnWFTMFH1nVA7f1TQXIHe9P26Fzg&s"
+                alt="img4">
+            <div class="ser3-detail">
+                <h2>Water wash</h2>
+                <p> At AquaClean Solutions, we provide top-quality water wash services to keep your equipment and
+                    facilities spotless. Our team uses advanced techniques and eco-friendly products to ensure a
+                    thorough clean while protecting the environment. From industrial machinery to commercial spaces,
+                    we deliver efficient and reliable results. Trust AquaClean to maintain a pristine, safe, and
+                    sanitary environment for your business.
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
